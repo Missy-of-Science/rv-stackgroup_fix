@@ -1,0 +1,21 @@
+package: StackGroup Adjustments
+author: Henriette Adel
+organization: Celluloid Visual Effects GmbH & Co. KG
+version: 1.01
+requires: ''
+rv: 2022.0.0
+optional: true
+
+modes:
+  - file: stack_group_fix.py
+    menu: 'Tools/StackGroup Box Adjustment'
+    load: immediate
+
+description: |
+    <p>
+    This package moves the left bounding box edge 0.01% of every source in the composite stack inwards,
+    so that the artist doesn't have to. This ensures the replace composite stack shows the proper Pixel Aspect Ratio.
+    Despite the chosen Composite Tool (Over, Difference, Replace etc.) this package works for every stack, since other
+    Tools have shown (less visible) errors.
+    </p>
+
